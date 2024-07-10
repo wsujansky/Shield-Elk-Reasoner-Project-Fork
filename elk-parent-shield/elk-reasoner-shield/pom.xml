@@ -1,0 +1,109 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.semanticweb.elk</groupId>
+		<artifactId>elk-parent-shield</artifactId>
+		<version>0.4.3</version>
+	</parent>
+
+	<artifactId>elk-reasoner-shield</artifactId>
+	<version>0.4.3</version>
+	<packaging>jar</packaging>
+
+	<name>ELK Reasoner -  Modified for SHIELD Hybrid Reasoner</name>
+	<description>ELK consequence-based reasoning engine</description>
+
+	<dependencies>
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>elk-owl-model</artifactId>
+			<version>0.4.3</version> <!-- <version>${project.version}</version> -->
+		</dependency>
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>elk-owl-implementation</artifactId>
+			<version>0.4.3</version> <!-- <version>${project.version}</version> -->
+		</dependency>
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>elk-util-collections</artifactId>
+			<version>0.4.3</version> <!-- <version>${project.version}</version> -->
+		</dependency>
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>elk-util-concurrent</artifactId>
+			<version>0.4.3</version> <!-- <version>${project.version}</version> -->
+			<!-- <version>0.4.3</version> -->
+			<type>jar</type>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>elk-util-hashing</artifactId>
+			<version>0.4.3</version> <!-- <version>${project.version}</version> -->
+		</dependency>
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>elk-util-logging</artifactId>
+			<version>0.4.3</version> <!-- <version>${project.version}</version> -->
+			<!-- <version>0.4.3</version> -->
+		</dependency>
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>elk-util-common</artifactId>
+			<version>0.4.3</version> <!-- <version>${project.version}</version> -->
+		</dependency>
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>elk-util-io</artifactId>
+			<version>0.4.3</version> <!-- <version>${project.version}</version> -->
+		</dependency>
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>elk-util-testing</artifactId>
+			<version>0.4.3</version> <!-- <version>${project.version}</version> -->
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>elk-owl-parsing-javacc</artifactId>
+			<version>0.4.3</version> <!-- <version>${project.version}</version> -->
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>elk-util-concurrent</artifactId>
+			<version>0.4.3</version> <!-- <version>${project.version}</version> -->
+			<type>test-jar</type>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<executions>
+					<execution>
+						<phase>test</phase>
+						<goals>
+							<goal>test-jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
