@@ -181,7 +181,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<owlapi.version>4.1.3</owlapi.version>
 		<protege.version>5.0.0-beta-21</protege.version>
-		<java.required.version>1.8</java.required.version>
+		<java.required.version>1.6</java.required.version>
 		<!-- TODO: get current year automatically -->
 		<currentYear>2016</currentYear>
 	</properties>

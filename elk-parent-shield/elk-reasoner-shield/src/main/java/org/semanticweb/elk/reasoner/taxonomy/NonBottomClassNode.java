@@ -94,7 +94,7 @@ public class NonBottomClassNode implements UpdateableTaxonomyNode<ElkClass> {
 	 * @param members
 	 *            non-empty list of equivalent ElkClass objects
 	 */
-	protected NonBottomClassNode(ConcurrentClassTaxonomy taxonomy,
+	public NonBottomClassNode(ConcurrentClassTaxonomy taxonomy,
 			Collection<ElkClass> members) {
 		this.taxonomy_ = taxonomy;
 		this.members_ = new ArrayList<ElkClass>(members);

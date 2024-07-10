@@ -52,23 +52,7 @@
 			<type>test-jar</type>
 			<scope>test</scope>
 		</dependency>
-<!-- -->
-		<dependency>
-			<groupId>${project.groupId}</groupId>
-			<artifactId>elk-reasoner</artifactId>
-			<version>${project.version}</version>
-			<type>jar</type>
-			<scope>compile</scope>
-		</dependency>
-		<dependency>
-			<groupId>${project.groupId}</groupId>
-			<artifactId>elk-reasoner</artifactId>
-			<version>${project.version}</version>
-			<type>test-jar</type>
-			<scope>test</scope>
-		</dependency>
-<!-- -->
-<!--
+<!-- IMPORTANT TO USE MODIFIED VERSION OF ELK-REASONER (I.E., elk-reasoner-shield), RATHER THAN ORIGINAL (I.E., elk-reasoner) -->
 		<dependency>
 			<groupId>${project.groupId}</groupId>
 			<artifactId>elk-reasoner-shield</artifactId>
@@ -83,7 +67,7 @@
 			<type>test-jar</type>
 			<scope>test</scope>
 		</dependency>
--->
+<!-- END BLOCK -->
 		<dependency>
 			<groupId>${project.groupId}</groupId>
 			<artifactId>elk-util-io</artifactId>
